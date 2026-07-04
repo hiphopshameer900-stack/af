@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Love Worth Restarting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="ambient-canvas"></canvas>
+
+    <div class="story-container">
+        
+        <section class="scene visible" id="scene-1" data-ambient="rain">
+            <div class="heart cracked" id="main-heart">
+                <div class="heart-half left"></div>
+                <div class="heart-half right"></div>
+            </div>
+            <div class="text-container grid-glow">
+                <p class="typewriter">Some distances are not measured in kilometers...</p>
+                <p class="typewriter delay-1">They're measured in silence.</p>
+            </div>
+            <div class="click-hint">Move your cursor to bring light • Click to continue</div>
+        </section>
+
+        <section class="scene" id="scene-2" data-ambient="fireflies">
+            <div class="sunlight"></div>
+            <div class="text-container grid-glow">
+                <p>I finally understood...</p>
+                <p class="fade-in">Love isn't just saying 'I love you.'</p>
+                <p class="fade-in delay-1">It's making the other person feel safe enough to believe it.</p>
+            </div>
+        </section>
+
+        <section class="scene" id="scene-3" data-ambient="fireflies">
+            <div class="text-container grid-glow">
+                <h3 class="scene-title">Instead of saying "I changed", I want to show it.</h3>
+                <div class="cards-grid">
+                    <div class="memory-card glass-card">✨ I learned to listen.</div>
+                    <div class="memory-card glass-card">✨ I learned patience.</div>
+                    <div class="memory-card glass-card">✨ I learned your silence also has feelings.</div>
+                    <div class="memory-card glass-card">✨ I learned that trust is earned.</div>
+                    <div class="memory-card glass-card">✨ I learned that love grows through actions.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scene" id="scene-4" data-ambient="fireflies">
+            <div class="text-container grid-glow">
+                <p>These weren't just memories.</p>
+                <p class="fade-in">They became the reason I never wanted to give up.</p>
+            </div>
+            <div class="polaroid-container">
+                <div class="polaroid float-item"><span>Our First Laugh</span></div>
+                <div class="polaroid float-item" style="animation-delay: -1.5s;"><span>The Sweetest Day</span></div>
+                <div class="polaroid float-item" style="animation-delay: -3s;"><span>Your Beautiful Smile</span></div>
+            </div>
+        </section>
+
+        <section class="scene" id="scene-5" data-ambient="sakura">
+            <div class="text-container dynamic-text grid-glow">
+                <p id="scene5-text-1"></p>
+                <p id="scene5-text-2"></p>
+                <p id="scene5-text-3"></p>
+            </div>
+        </section>
+
+        <section class="scene" id="scene-6" data-ambient="sakura">
+            <div class="cinematic-bridge-wrapper">
+                <div class="bridge-structure support-rope left-rope"></div>
+                <div class="bridge-structure support-rope right-rope"></div>
+                <div class="bridge-chasm-glow"></div>
+                
+                <div class="bridge-deck" id="bridge-planks">
+                    </div>
+                
+                <div class="bridge-anchors">
+                    <div class="cliff left-cliff"><span class="character-label her">Suchi Ma</span></div>
+                    <div class="cliff right-cliff"><span class="character-label him">Shameer</span></div>
+                </div>
+            </div>
+            <div class="text-container grid-glow">
+                <p id="bridge-text-1" class="bridge-narration"></p>
+                <p id="bridge-text-2" class="bridge-narration"></p>
+            </div>
+        </section>
+
+        <section class="scene" id="scene-7" data-ambient="sakura">
+            <div class="envelope-wrapper">
+                <div class="envelope" onclick="openLetter()">
+                    <div class="flap"></div>
+                    <div class="letter-paper">
+                        <h2>My Dear Suchitra,</h2>
+                        <div class="letter-content">
+                            <p>I know things aren't the way they used to be.</p>
+                            <p>We laugh sometimes... We talk...</p>
+                            <p>But I can still feel the distance between us. I understand why.</p>
+                            <p>Trust doesn't disappear in one day, and it doesn't return in one day either.</p>
+                            <p>I don't expect you to suddenly believe every promise I make. Instead, I want my actions to speak louder than these words.</p>
+                            <p>I want to become the reason your heart feels safe again. Not because you have to... But because one day, it simply feels right.</p>
+                            <p>I miss the way we loved each other. I miss the comfort. I miss making you smile without hesitation.</p>
+                            <p>More than anything... I miss seeing you love without fear.</p>
+                            <p>If loving me still feels risky, I won't ask you to ignore that feeling.</p>
+                            <p>I'll work every day to make it feel less like a risk and more like coming home.</p>
+                            <p>I don't want a perfect relationship. I want an honest one. One where we grow together, laugh together, cry together, heal together, and never stop choosing each other.</p>
+                            <p>If you'll allow me, I'd love to rebuild what we had—not by pretending nothing happened, but by creating something even stronger.</p>
+                            <p>No pressure. No deadline.</p>
+                            <p>Just one promise: I'll keep proving my love through my actions. Until one day... your heart smiles the way it used to. ❤️</p>
+                            <p class="center-text"><strong>Will you let us write a new beginning... together?</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scene" id="scene-8" data-ambient="hearts">
+            <div class="final-container grid-glow">
+                <p id="final-text-1"></p>
+                <p id="final-text-2"></p>
+                
+                <button class="action-btn hidden" id="start-chapter-btn">🌹 Start Our New Chapter</button>
+                
+                <div class="two-hearts-container">
+                    <div class="mini-heart left-h">❤️</div>
+                    <div class="mini-heart right-h">❤️</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
